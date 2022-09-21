@@ -1,3 +1,6 @@
+if [ -d build ];
+    then rm -r build;
+fi
 mkdir build
 cd build && cmake -G "Unix Makefiles" -D "CMAKE_TOOLCHAIN_FILE=../tools/CMake/GNU-ARM-Toolchain.cmake" ../
 make -j

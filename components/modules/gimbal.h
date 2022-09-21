@@ -19,8 +19,13 @@
 #define __GIMBAL_H__
 
 /* gimbal relevant */
-#define PITCH_ANGLE_MAX      20.0f
-#define PITCH_ANGLE_MIN      -20.0f
+// #define PITCH_ANGLE_MAX      20.0f
+// #define PITCH_ANGLE_MIN      -20.0f
+
+#define PITCH_ANGLE_MAX      40.0f
+#define PITCH_ANGLE_MIN      -40.0f
+
+
 #define YAW_ANGLE_MAX      70.0f
 #define YAW_ANGLE_MIN      -70.0f
 

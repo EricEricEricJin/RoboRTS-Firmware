@@ -3,5 +3,9 @@
         "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/tools/CMake/GNU-ARM-Toolchain.cmake"
 
     },
-    "cmake.generator": "Unix Makefiles"
+    "cmake.generator": "Unix Makefiles",
+    "files.associations": {
+        "appcfg.h": "c",
+        "gimbal.h": "c"
+    }
 }

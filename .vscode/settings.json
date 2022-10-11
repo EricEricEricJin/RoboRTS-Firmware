@@ -6,6 +6,11 @@
     "cmake.generator": "Unix Makefiles",
     "files.associations": {
         "appcfg.h": "c",
-        "gimbal.h": "c"
+        "gimbal.h": "c",
+        "drv_imu.h": "c",
+        "bmi088driver.h": "c",
+        "easyflash.h": "c",
+        "main.h": "c",
+        "limits": "c"
     }
 }

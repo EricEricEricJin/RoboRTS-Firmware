@@ -24,6 +24,8 @@
 #include "event.h"
 #include "os_timer.h"
 
+#include "tim.h"
+
 struct pid_param turn_motor_param =
 {
     .p = 10.0f,
@@ -95,12 +97,16 @@ int32_t shoot_firction_toggle(shoot_t p_shoot)
     if (toggle)
     {
         shoot_set_fric_speed(p_shoot, 1000, 1000);
+        // Turn off laser
+        __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 0);
     }
     else
     {
         // shoot_set_fric_speed(p_shoot, 1250, 1250);
         shoot_set_fric_speed(p_shoot, FIRC_MAX_SPEED, FIRC_MAX_SPEED);
 
+        // Turn on laser
+        __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 1999);
     }
     toggle = ~toggle;
     return 0;

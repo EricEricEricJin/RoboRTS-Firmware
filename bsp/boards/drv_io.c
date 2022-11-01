@@ -27,6 +27,8 @@ void pwm_device_init(void)
     HAL_TIM_PWM_Start(&htim8,  TIM_CHANNEL_2); // friction wheel
     HAL_TIM_PWM_Start(&htim8,  TIM_CHANNEL_3);
 
+    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+
     fric_set_output(1000, 1000);
     mpu_heat_output(0);
 }

@@ -11,6 +11,9 @@
         "bmi088driver.h": "c",
         "easyflash.h": "c",
         "main.h": "c",
-        "limits": "c"
+        "limits": "c",
+        "dbus.h": "c",
+        "board.h": "c",
+        "drv_io.h": "c"
     }
 }
